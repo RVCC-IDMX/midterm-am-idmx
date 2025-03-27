@@ -1,23 +1,61 @@
 /* Styles for Mobile Site */
+@media screen and (min-width: 60em) {
+   
+    body {
+        font-family:"IBM Plex Mono";
+        background-color: #8B7F2E;
+    }
 
 /* Header & Hero */
+
+    #hero img {
+        width: 150px;
+        max-width:100%;
+    }
 
 /* Projects */
 
 /* Reviews */
 
 /* Footer */
-
+}
 
 /* Media state for Desktop site */
 @media (min-width: 1000px) {
 
+    body {
+        font-family:"IBM Plex Mono";
+        background-color: #8B7F2E;
+    }
     /* Header & Hero */
-
+    #hero img {
+        width: 150px;
+        max-width:100%;
+    }
     /* Projects */
+    #projects {
+        display:list-item;
+        grid-template-columns: 1fr 1fr 1fr;
+     }
 
+
+     #projects h2 {
+        grid-column: 1/-1;
+
+     }
+     #projects figure {
+        display: block;
+     }
+
+     #projects figure img {
+        max-width: 480px;
+     }
     /* Reviews */
 
     /* Footer */
 
 }
+
+
+
+
